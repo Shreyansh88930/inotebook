@@ -35,39 +35,44 @@ const Login = (props) => {
   };
 
   return (
-    <div className="container my-4 mt-3">
-  <h2 className="mb-4">Login to continue to iNotebook</h2>
-  <form onSubmit={handleSubmit}>
-    <div className="form-group mb-3">
-      <label htmlFor="email">Email address</label>
-      <input
-        type="email"
-        className="form-control"
-        id="email"
-        name="email"
-        value={credentials.email}
-        onChange={onChange}
-        placeholder="Enter email"
-        required
-      />
-    </div>
-    <div className="form-group mb-3">
-      <label htmlFor="password">Password</label>
-      <input
-        type="password"
-        className="form-control"
-        id="password"
-        name="password"
-        value={credentials.password}
-        onChange={onChange}
-        placeholder="Password"
-        required
-      />
-    </div>
-    <button type="submit" className="btn btn-primary">Login</button>
-  </form>
-</div>
+    <div className="d-flex justify-content-center align-items-center vh-100 bg-light">
+      <div className="card p-4 shadow-sm" style={{ maxWidth: '420px', width: '100%' }}>
+        <h3 className="text-center mb-4 text-primary">Login to iNotebook</h3>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group mb-3">
+            <label htmlFor="email" className="form-label">Email address</label>
+            <input
+              type="email"
+              className="form-control"
+              id="email"
+              name="email"
+              value={credentials.email}
+              onChange={onChange}
+              placeholder="Enter your email"
+              required
+            />
+          </div>
 
+          <div className="form-group mb-4">
+            <label htmlFor="password" className="form-label">Password</label>
+            <input
+              type="password"
+              className="form-control"
+              id="password"
+              name="password"
+              value={credentials.password}
+              onChange={onChange}
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+
+          <div className="d-grid">
+            <button type="submit" className="btn btn-primary">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
   );
 };
 

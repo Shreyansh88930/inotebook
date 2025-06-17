@@ -39,3 +39,62 @@
 i{
   cursor:pointer;
 }
+.note-card {
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+  background: linear-gradient(145deg, #fdfdfd, #f0f0f0);
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.hover-icon {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.hover-icon:hover {
+  transform: scale(1.2);
+  color: #343a40 !important;
+  cursor: pointer;
+}
+.add-note-container {
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.add-note-container:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+input:focus, textarea:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+.modal-content {
+  border-radius: 1rem;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.notes-container {
+  background: #fefefe;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+textarea:focus, input:focus {
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.3);
+  border-color: #86b7fe;
+}
